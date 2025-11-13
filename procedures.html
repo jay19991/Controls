@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Automation Projects Procedures</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand title" href="index.html">BAS Controls Sites</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+		  <li class="nav-item"><a href="procedures.html" class="nav-link active">Procedures</a></li>
+          <li class="nav-item"><a href="ems-sites.html" class="nav-link">EMS Sites</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+<div class="container py-5">
+  <h1 class="text-center mb-5 text-primary fw-bold animate__animated animate__fadeInDown">
+    Building Automation Project Procedures
+  </h1>
+
+  <div class="flowchart position-relative">
+
+    <!-- SVG for curves and arrows -->
+    <svg class="flow-svg" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#0d6efd" />
+        </marker>
+      </defs>
+      <!-- Curves -->
+      <path id="curve1" class="curve" fill="transparent" stroke="#0d6efd" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <path id="curve2" class="curve" fill="transparent" stroke="#0d6efd" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <path id="curve3" class="curve" fill="transparent" stroke="#0d6efd" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <path id="curve4" class="curve" fill="transparent" stroke="#0d6efd" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <path id="curve5" class="curve" fill="transparent" stroke="#0d6efd" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <path id="curve6" class="curve" fill="transparent" stroke="#0d6efd" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <path id="curve7" class="curve" fill="transparent" stroke="#0d6efd" stroke-width="3" marker-end="url(#arrowhead)"/>
+    </svg>
+
+    <!-- Steps -->
+    <div class="flow-node left animate__animated" data-step="1">
+      <div class="content d-flex align-items-center">
+        <div class="icon bg-primary text-white me-2"><i class="bi bi-lightning-charge"></i></div>
+        <span>1. Project Initiation</span>
+      </div>
+      <div class="step-desc"></div>
+    </div>
+
+    <div class="flow-node right animate__animated" data-step="2">
+      <div class="content d-flex align-items-center">
+        <div class="icon bg-success text-white me-2"><i class="bi bi-pencil-square"></i></div>
+        <span>2. System Design</span>
+      </div>
+      <div class="step-desc"></div>
+    </div>
+
+    <div class="flow-node left animate__animated" data-step="3">
+      <div class="content d-flex align-items-center">
+        <div class="icon bg-warning text-white me-2"><i class="bi bi-journal-text"></i></div>
+        <span>3. Engineering & Documentation</span>
+      </div>
+      <div class="step-desc"></div>
+    </div>
+
+    <div class="flow-node right animate__animated" data-step="4">
+      <div class="content d-flex align-items-center">
+        <div class="icon bg-danger text-white me-2"><i class="bi bi-hdd-stack"></i></div>
+        <span>4. Panel Fabrication & Software Development</span>
+      </div>
+      <div class="step-desc"></div>
+    </div>
+
+    <div class="flow-node left animate__animated" data-step="5">
+      <div class="content d-flex align-items-center">
+        <div class="icon bg-info text-white me-2"><i class="bi bi-tools"></i></div>
+        <span>5. Installation & Field Wiring</span>
+      </div>
+      <div class="step-desc"></div>
+    </div>
+
+    <div class="flow-node right animate__animated" data-step="6">
+      <div class="content d-flex align-items-center">
+        <div class="icon bg-secondary text-white me-2"><i class="bi bi-check-circle"></i></div>
+        <span>6. Testing & Commissioning</span>
+      </div>
+      <div class="step-desc"></div>
+    </div>
+
+    <div class="flow-node left animate__animated" data-step="7">
+      <div class="content d-flex align-items-center">
+        <div class="icon bg-dark text-white me-2"><i class="bi bi-person-check"></i></div>
+        <span>7. Handover & Training</span>
+      </div>
+      <div class="step-desc"></div>
+    </div>
+
+    <div class="flow-node right animate__animated" data-step="8">
+      <div class="content d-flex align-items-center">
+        <div class="icon bg-primary text-white me-2"><i class="bi bi-gear"></i></div>
+        <span>8. Operation & Maintenance</span>
+      </div>
+      <div class="step-desc"></div>
+    </div>
+  </div>
+  <a href="login.html" class="return">Return to Login</a>
+</div>
+
+  <footer class="footer bg-dark text-white text-center py-4">
+    <p>Connect with me on 
+      <a href="https://www.linkedin.com" class="text-info" target="_blank">LinkedIn</a> 
+      | Email: <a href="mailto:jpatelhvac123@gmail.com" class="text-info">Jay Patel</a>
+    </p>
+    <p>&copy; 2025 Energy Management System. All Rights Reserved.</p>
+  </footer>
+  
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

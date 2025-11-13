@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMS Sites | BAS Controls Sites</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand title" href="index.html">BAS Controls Sites</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+		  <li class="nav-item"><a href="procedures.html" class="nav-link">Procedures</a></li>
+          <li class="nav-item"><a href="ems-sites.html" class="nav-link active">EMS Sites</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- EMS Sites Section -->
+  <section class="ems-bg d-flex align-items-center">
+    <div class="container text-center text-white py-5">
+      <h2 class="mb-4">Full Access: Remote EMS Sites</h2>
+      <p class="lead mb-5">Select a remote site to view live monitoring data.</p>
+	  <a href="login.html" class="btn btn-light mt-3">Return to Login</a>
+	  <p></p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+	  
+		<div class="col">
+			<div class="card bg-dark bg-opacity-75 text-white shadow-sm h-100">
+				<div class="card-body">
+					<h5 class="card-title">NJ Sharing Network Jace</h5>
+					<p class="card-text">175 May Street, Edision, NJ 08837</p>
+					<a href="https://mtfsuite.ddns.net/ord/file:%5EPxGraphics/Graphics/Misc/Home.px" class="btn btn-outline-light">Connect</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card bg-dark bg-opacity-75 text-white shadow-sm h-100">
+				<div class="card-body">
+					<h5 class="card-title">Metro Middlesex Plaza Jace</h5>
+					<p class="card-text">200 Middlesex, Turnpike, Iselin,NJ 08830</p>
+					<a href="https://50.242.14.121/prelogin" class="btn btn-outline-light">Connect</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card bg-dark bg-opacity-75 text-white shadow-sm h-100">
+				<div class="card-body">
+					<h5 class="card-title">Burgen County Academics Jace</h5>
+					<p class="card-text">200 Hackensack Ave, Hackensack, NJ 07601</p>
+					<a href="https://168.229.19.200/prelogin" class="btn btn-outline-light">Connect</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card bg-dark bg-opacity-75 text-white shadow-sm h-100">
+				<div class="card-body">
+					<h5 class="card-title">Bernards Township Public Works Jace</h5>
+					<p class="card-text">277 S Maple Ave, Basking Ridge, NJ 07920</p>
+					<a href="https://47.23.101.182/prelogin" class="btn btn-outline-light">Connect</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card bg-dark bg-opacity-75 text-white shadow-sm h-100">
+				<div class="card-body">
+					<h5 class="card-title">Bernards Township Library Jace</h5>
+					<p class="card-text">32 S Maple Ave, Basking Ridge, NJ 07920</p>
+					<a href="https://75.127.159.198/prelogin" class="btn btn-outline-light">Connect</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card bg-dark bg-opacity-75 text-white shadow-sm h-100">
+				<div class="card-body">
+					<h5 class="card-title">Bernards Township Police Department Jace</h5>
+					<p class="card-text">1 Collyer Ln, Basking Ridge, NJ 07920</p>
+					<a href="http://72.68.116.41//prelogin" class="btn btn-outline-light">Connect</a>
+				</div>
+			</div>
+		</div>
+		
+        <script>
+          for(let i=1; i<=15; i++){
+            document.write(`
+              <div class="col">
+                <div class="card bg-dark bg-opacity-75 text-white shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Remote Site ${i}</h5>
+                    <p class="card-text">Energy Monitoring Node #${i}</p>
+                    <a href="ems-sites2.html" class="btn btn-outline-light">Connect</a>
+                  </div>
+                </div>
+              </div>
+            `);
+          }
+        </script>
+		
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark text-white text-center py-4">
+    <p>Connect with me on 
+      <a href="https://www.linkedin.com" class="text-info" target="_blank">LinkedIn</a> 
+      | Email: <a href="mailto:jpatelhvac123@gmail.com" class="text-info">Jay Patel</a>
+    </p>
+    <p>&copy; 2025 Energy Management System. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
