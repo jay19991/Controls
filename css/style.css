@@ -52,8 +52,13 @@ body {
 /* EMS Sites background */
 .ems-bg {
   min-height: 100vh;
-  background: url('https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  
   background-attachment: fixed;
+}
+
+.full {
+	text-align: center; 
+	color: black;
 }
 
 .card {
