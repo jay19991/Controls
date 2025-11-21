@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 		else {
           localStorage.setItem('emsAccess', 'limited');
-          setTimeout(() => window.location.href = 'ems-sites1.html', 1500);
+          setTimeout(() => window.location.href = 'procedures.html', 1500);
         }
       } else {
         alert('Invalid credentials or please register first.');
