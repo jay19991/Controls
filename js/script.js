@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (stored && stored.email === email && stored.pass === pass) {
         loginSuccess.classList.remove('d-none');
-  // Restrict access for EMS Sites
-        if (passphrase === 'Unihvac123') {
+  // Restrict access for Controls
+        if (passphrase === 'Unihvac123') { // Full access for Controls
           localStorage.setItem('emsAccess', 'full');
           setTimeout(() => window.location.href = 'ems-sites.html', 1500);
-        } 
+        }
   // Restrict access for Portfolio
 		else if (passphrase === 'Unihvac@123') {
           localStorage.setItem('emsAccess', 'full');
@@ -59,14 +59,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		
   // Restrict access
   const path = window.location.pathname;
-  if (path.includes('ems-sites.html') || path.includes('ems-sites1.html')) {
+  if (path.includes('ems-sites.html') || path.includes('ems-sites1.html') || path.includes('table.html') || path.includes('procedures.html'))  {
     const access = localStorage.getItem('emsAccess');
     if (!access) {
       alert('Please log in to access this page.');
       window.location.href = 'login.html';
     }
     if (path.includes('ems-sites.html') && access !== 'full') {
-      alert('You do not have permission to view this page.');
+      alert('You do not have permission to view this page, Passphrase required to view this page.');
       window.location.href = 'ems-sites1.html';
     }
   }
