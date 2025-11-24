@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (passphrase === 'Unihvac123') { // Full access for Controls
           localStorage.setItem('emsAccess', 'full');
           setTimeout(() => window.location.href = 'ems-sites.html', 1500);
+		  
         }
   // Restrict access for Portfolio
 		else if (passphrase === 'Unihvac@123') {
@@ -69,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
       alert('You do not have permission to view this page, Passphrase required to view this page.');
       window.location.href = 'ems-sites1.html';
     }
-	if (path.includes('table.html') && access !== 'full') {
+	else if (path.includes('table.html') && access !== 'full') {
       alert('You do not have permission to view this page, Passphrase required to view this page.');
       window.location.href = 'ems-sites1.html';
     }
